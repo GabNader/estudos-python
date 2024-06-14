@@ -21,4 +21,3 @@ def soma(* num):
         s += n
     print(f'Somando os números {num} temos {s}')
 soma(5, 73)
-
