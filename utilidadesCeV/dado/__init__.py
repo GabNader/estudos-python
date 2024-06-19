@@ -1,20 +1,9 @@
 def leiadinheiro(n):
-    print(n)
-    x = str(input())
-    if x.isnumeric():
-        valor = float(x)
-        return f'{valor:.2f}'
-    else:
-        print('ERRO! Digite um número válido.')
-
-leiadinheiro('Digite um número: ')
-
-
-def leiaint(num):
-    while True:
-        num = str(input(num))
-        if num.isnumeric():
-            valor = int(num)
-            return valor
+    válido = False
+    while not válido:
+        entrada = str(input(n)).replace(',', '.').strip()
+        if entrada.isalpha() or entrada == '':
+            print(f'Erro! {entrada} é um preço inválido.')
         else:
-            print('ERRO! Digite um número inteiro válido.')
+            válido = True
+            return float(entrada)

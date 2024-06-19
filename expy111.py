@@ -1,4 +1,3 @@
 from utilidadesCeV import moeda
-from utilidadesCeV import dado
-p = dado.leiadinheiro('Digite um número: ')
+p = float(input('digite um valor: R$'))
 moeda.resumo(p, 10, 20)
