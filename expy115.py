@@ -1,4 +1,4 @@
-from expy115options import listrinha #ver_cadastro, cadastrar
+from expy115options import listrinha, ver_cadastro, cadastrar
 listrinha('MENU PRINCIPAL')
 print('1 - Ver pessoas cadastradas')
 print('2 - Cadastrar nova pessoa')
@@ -7,11 +7,11 @@ while True:
     try:
         option = int(input('Sua opção: '))
         if option == 1:
-            listrinha('Opção 1')
-            #ver_cadastro()
+            listrinha('PESSOAS CADASTRADAS')
+            ver_cadastro()
         elif option == 2:
-            listrinha('Opção 2')
-            #cadastrar()
+            listrinha('NOVO CADASTRO')
+            cadastrar()
         elif option == 3:
             listrinha('Obrigado, volte sempre...')
             break
